@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import TanstackProvider from "./components/providers/tanstack-provider";
+import TanstackProvider from "../components/providers/tanstack-provider";
+import {
+  SidebarInset,
+  SidebarProvider,
+  SidebarTrigger,
+} from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
+import { FaGooglePlay } from "react-icons/fa";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +35,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <TanstackProvider>{children}</TanstackProvider>
+        <SidebarProvider>
+          <AppSidebar />
+          <SidebarInset>
+            <header className="flex md:hidden h-16 shrink-0 items-center gap-2 border-b px-4">
+              <SidebarTrigger className="-ml-1" />
+              <div className="flex items-center justify-center w-full">
+                <FaGooglePlay className="text-2xl" />
+                <h1 className="ml-2 text-lg font-bold">Play Video</h1>
+              </div>
+            </header>
+
+            <TanstackProvider>{children}</TanstackProvider>
+          </SidebarInset>
+        </SidebarProvider>
       </body>
     </html>
   );
