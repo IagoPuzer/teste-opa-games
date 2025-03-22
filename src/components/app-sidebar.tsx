@@ -25,12 +25,12 @@ const data = {
       items: [
         {
           title: "Videos",
-          url: "#",
+          url: "/",
           icon: <MdVideoSettings />,
         },
         {
           title: "Favoritos",
-          url: "#",
+          url: "/favorites",
           icon: <MdOutlineFavoriteBorder />,
         },
       ],
