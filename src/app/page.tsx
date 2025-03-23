@@ -7,21 +7,8 @@ import { SearchForm } from "@/components/searchForm";
 import Pagination from "@/components/paginations";
 import { formatDate } from "@/utils/dateUtils";
 import VideoList from "@/components/videoList";
-
-type Video = {
-  id: { videoId?: string };
-  snippet: {
-    channelTitle: string;
-    title: string;
-    description: string;
-    publishedAt: string;
-    thumbnails: { medium: { url: string } };
-  };
-};
-
-type YoutubeResponse = {
-  items: Video[];
-};
+import SomethingWrong from "@/components/somethingWrong";
+import { YoutubeResponse } from "@/@types/youtubeResponseSchema";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -43,8 +30,7 @@ export default function Home() {
     setCurrentPage(1);
   };
 
-  if (isLoading) return <div>Carregando...</div>;
-  if (isError) return <div>Erro ao carregar vídeos.</div>;
+  if (isError) return <SomethingWrong />;
 
   // Filtra os vídeos com base no título
   const filteredVideos = data?.items.filter(
@@ -71,7 +57,7 @@ export default function Home() {
     <div className="p-6">
       <h1 className="text-2xl font-bold">Vídeos do YouTube</h1>
       <SearchForm onSearch={handleSearch} />
-      <VideoList videos={currentVideos || []} />
+      <VideoList videos={currentVideos || []} isLoading={isLoading} />
       <Pagination
         currentPage={currentPage}
         totalItems={filteredVideos?.length || 0}

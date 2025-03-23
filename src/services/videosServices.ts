@@ -1,23 +1,7 @@
 import axios from "axios";
+import { YoutubeResponse } from "@/@types/youtubeResponseSchema";
 
 const API_KEY = "AIzaSyCA1pLbPkJy7TCzNdUfQhBIwCTLJNZ6Jew";
-
-interface YoutubeResponse {
-  items: Array<{
-    id: { videoId?: string };
-    snippet: {
-      channelTitle: string;
-      title: string;
-      description: string;
-      publishedAt: string;
-      thumbnails: {
-        default: { url: string };
-        medium: { url: string };
-        high: { url: string };
-      };
-    };
-  }>;
-}
 
 export const getYoutubeVideos = async (params: {
   q: string;
