@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎥 Aplicação de Vídeos do YouTube
 
-## Getting Started
+Esta aplicação é um projeto desenvolvido com [Next.js](https://nextjs.org) que permite aos usuários buscar, visualizar e favoritar vídeos do YouTube. A interface é responsiva e intuitiva, proporcionando uma experiência agradável para explorar conteúdos do YouTube. 🌟
 
-First, run the development server:
+## ✨ Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🔍 **Busca de vídeos**: Pesquise vídeos do YouTube com base no título do vídeo.
+- ▶️ **Visualização de vídeos**: Assista aos vídeos diretamente na aplicação.
+- ❤️ **Favoritos**: Adicione vídeos aos favoritos para acessá-los posteriormente.
+- 📄 **Paginação**: Navegue entre os resultados de busca com facilidade.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ⚡ **Next.js** (15.2.3): Framework para desenvolvimento web com React.
+- 📦 **Tanstack Query** (5.69.0): Gerenciamento de estado assíncrono e cache de dados.
+- 🗂️ **Tanstack Store** (0.7.0): Gerenciamento de estado global para vídeos favoritos.
+- 🎨 **Tailwind CSS** (4): Estilização da interface com classes utilitárias.
+- 🖼️ **React Icons** (5.5.0): Biblioteca de ícones para React.
+- 🛠️ **ShadCN**: Componentes acessíveis e estilizados.
+- 🌐 **Axios** (1.8.4): Cliente HTTP para requisições à API do YouTube.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Como Rodar a Aplicação
 
-## Learn More
+### Pré-requisitos
 
-To learn more about Next.js, take a look at the following resources:
+Certifique-se de ter instalado:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🖥️ [Node.js](https://nodejs.org/)
+- 📦 [npm](https://www.npmjs.com/) ou outro gerenciador de pacotes como `yarn`, `pnpm` ou `bun`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Passos para rodar localmente
 
-## Deploy on Vercel
+1. 🛠️ Clone o repositório:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone git@github.com:IagoPuzer/teste-opa-games.git
+   cd teste-opa-games
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. 📦 Instale as dependências:
+
+   ```bash
+   npm install
+   # ou
+   yarn install
+   # ou
+   pnpm install
+   # ou
+   bun install
+   ```
+
+3. 🔑 Configure as variáveis de ambiente:
+   Crie um arquivo `.env` na raiz do projeto e adicione a seguinte variável:
+
+   ```env
+   NEXT_PUBLIC_YOUTUBE_API_KEY=AIzaSyD1i3IvU6VB7qiig8vNFmj4yAYWlrjmXTU
+   ```
+
+   ⚠️ **Nota**: Caso a chave de API apresente erro de expiração ou exceda o limite de solicitações, será necessário gerar uma nova chave. Entre em contato para solicitar uma nova chave de API.
+
+4. ▶️ Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   # ou
+   pnpm dev
+   # ou
+   bun dev
+   ```
+
+5. 🌐 Abra [http://localhost:3000](http://localhost:3000) no navegador para acessar a aplicação.
+
+## 🖥️ Usabilidade
+
+- 🏠 **Página Inicial**: Exibe uma lista de vídeos com base em uma busca padrão. Você pode realizar buscas personalizadas utilizando o campo de pesquisa.
+- 🎬 **Modal de Vídeo**: Ao clicar em um vídeo, um modal é aberto para exibição do conteúdo.
+- ❤️ **Favoritos**: Acesse a página de favoritos para visualizar os vídeos que você marcou como favoritos.
+- 📄 **Paginação**: Navegue entre os resultados de busca utilizando os botões de paginação.
+
+## 🌍 Deploy
+
+Este projeto está deployado na plataforma Vercel e pode ser acessado através do seguinte link:
+
+👉 [https://teste-opa-games.vercel.app/](https://teste-opa-games.vercel.app/)
