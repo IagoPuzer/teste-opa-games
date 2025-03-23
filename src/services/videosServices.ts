@@ -3,8 +3,6 @@ import { YoutubeResponse } from "@/@types/youtubeResponseSchema";
 
 const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
-console.log("api", apiKey);
-
 export const getYoutubeVideos = async (params: {
   q: string;
   part?: string;
