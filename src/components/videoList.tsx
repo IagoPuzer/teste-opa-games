@@ -1,5 +1,5 @@
-import CardVideo from "@/components/card-video";
-import VideoDialog from "@/components/video-dialog";
+import CardVideo from "@/components/cardVideo";
+import VideoDialog from "@/components/videoDialog";
 import { useState } from "react";
 
 type Video = {

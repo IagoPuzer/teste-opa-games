@@ -3,10 +3,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { getYoutubeVideos } from "../services/videosServices";
 import { useState } from "react";
-import { SearchForm } from "@/components/search-form";
+import { SearchForm } from "@/components/searchForm";
 import Pagination from "@/components/paginations";
 import { formatDate } from "@/utils/dateUtils";
-import VideoList from "@/components/video-list";
+import VideoList from "@/components/videoList";
 
 type Video = {
   id: { videoId?: string };

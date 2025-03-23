@@ -17,7 +17,7 @@ import {
 import { FaGooglePlay } from "react-icons/fa";
 import { MdVideoSettings, MdOutlineFavoriteBorder } from "react-icons/md";
 
-// This is sample data.
+
 const data = {
   navMain: [
     {

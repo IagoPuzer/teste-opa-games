@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import TanstackProvider from "../components/providers/tanstack-provider";
+import TanstackProvider from "../components/providers/tanstackProvider";
 import {
   SidebarInset,
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/app-sidebar";
+import { AppSidebar } from "@/components/appSidebar";
 import { FaGooglePlay } from "react-icons/fa";
 
 const geistSans = Geist({

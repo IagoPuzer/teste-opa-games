@@ -1,7 +1,7 @@
 "use client";
 
 import { useFavoriteVideos } from "@/stores/favoriteVideosStore";
-import VideoList from "@/components/video-list";
+import VideoList from "@/components/videoList";
 
 export default function Favorites() {
   const { favorites } = useFavoriteVideos();
