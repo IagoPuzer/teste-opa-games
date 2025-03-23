@@ -17,7 +17,6 @@ import {
 import { FaGooglePlay } from "react-icons/fa";
 import { MdVideoSettings, MdOutlineFavoriteBorder } from "react-icons/md";
 
-
 const data = {
   navMain: [
     {
@@ -59,7 +58,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <div className="flex items-center">
           <FaGooglePlay className="text-2xl" />
           {isOpen && (
-            <h1 className="ml-2 text-lg font-bold">Play Video</h1>
+            <h1 className="ml-2 text-lg font-bold">Play Vídeo</h1>
           )}{" "}
         </div>
         <SidebarTrigger

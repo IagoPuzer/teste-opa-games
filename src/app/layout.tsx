@@ -42,7 +42,7 @@ export default function RootLayout({
               <SidebarTrigger className="-ml-1" />
               <div className="flex items-center justify-center w-full">
                 <FaGooglePlay className="text-2xl" />
-                <h1 className="ml-2 text-lg font-bold">Play Video</h1>
+                <h1 className="ml-2 text-lg font-bold">Play Vídeo</h1>
               </div>
             </header>
 

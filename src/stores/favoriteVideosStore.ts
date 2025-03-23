@@ -1,15 +1,6 @@
 import { Store } from "@tanstack/store";
 import { useEffect, useState } from "react";
-
-interface FavoriteVideo {
-  videoId: { videoId: string };
-  title: string;
-  description: string;
-  thumbnailUrl: string;
-  channelTitle: string;
-  views: number;
-  uploadDate: string;
-}
+import { FavoriteVideo } from "@/@types/favoriteVideosSchema";
 
 interface FavoriteVideosState {
   favorites: FavoriteVideo[];

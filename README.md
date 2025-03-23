@@ -1,6 +1,8 @@
-# 🎥 Aplicação de Vídeos do YouTube
+# 🎥 Play Vídeo
 
-Esta aplicação é um projeto desenvolvido com [Next.js](https://nextjs.org) que permite aos usuários buscar, visualizar e favoritar vídeos do YouTube. A interface é responsiva e intuitiva, proporcionando uma experiência agradável para explorar conteúdos do YouTube. 🌟
+A "Aplicação Play Vídeos" é um projeto desenvolvido com Next.js, permitindo aos usuários buscar, visualizar e favoritar vídeos do YouTube de forma intuitiva e eficiente. A interface responsiva proporciona uma experiência fluida e acessível para explorar conteúdos audiovisuais.
+
+Este projeto foi desenvolvido como parte do teste técnico para a vaga de desenvolvedor front-end.
 
 ## ✨ Funcionalidades
 
@@ -16,7 +18,7 @@ Esta aplicação é um projeto desenvolvido com [Next.js](https://nextjs.org) qu
 - 🗂️ **Tanstack Store** (0.7.0): Gerenciamento de estado global para vídeos favoritos.
 - 🎨 **Tailwind CSS** (4): Estilização da interface com classes utilitárias.
 - 🖼️ **React Icons** (5.5.0): Biblioteca de ícones para React.
-- 🛠️ **ShadCN**: Componentes acessíveis e estilizados.
+- 🛠️ **Shadcn/ui**: Componentes acessíveis e estilizados.
 - 🌐 **Axios** (1.8.4): Cliente HTTP para requisições à API do YouTube.
 
 ## 🚀 Como Rodar a Aplicação
@@ -81,6 +83,6 @@ Certifique-se de ter instalado:
 
 ## 🌍 Deploy
 
-Este projeto está deployado na plataforma Vercel e pode ser acessado através do seguinte link:
+Este projeto está hospedado na plataforma Vercel e pode ser acessado através do seguinte link:
 
 👉 [https://teste-opa-games.vercel.app/](https://teste-opa-games.vercel.app/)
