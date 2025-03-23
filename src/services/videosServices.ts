@@ -1,7 +1,9 @@
 import axios from "axios";
 import { YoutubeResponse } from "@/@types/youtubeResponseSchema";
 
-const API_KEY = "AIzaSyCA1pLbPkJy7TCzNdUfQhBIwCTLJNZ6Jew";
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+
+console.log("api", apiKey);
 
 export const getYoutubeVideos = async (params: {
   q: string;
@@ -14,7 +16,7 @@ export const getYoutubeVideos = async (params: {
     const response = await axios.get<YoutubeResponse>(
       "https://www.googleapis.com/youtube/v3/search",
       {
-        params: { ...params, key: API_KEY },
+        params: { ...params, key: apiKey },
       }
     );
     return response.data;
