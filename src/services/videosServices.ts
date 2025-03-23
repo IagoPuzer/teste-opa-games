@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "AIzaSyD_jNwJhPo2iOAwxKzpEVsZieq7Iy2YIWU";
+const API_KEY = "AIzaSyCA1pLbPkJy7TCzNdUfQhBIwCTLJNZ6Jew";
 
 interface YoutubeResponse {
   items: Array<{
