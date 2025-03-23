@@ -46,7 +46,6 @@ export default function CardVideo({
     if (isFavorited) {
       removeFavoriteVideo(videoId.videoId);
       setIsFavorited(false);
-      console.log(`Vídeo "${title}" foi removido dos favoritos.`);
     } else {
       addFavoriteVideo({
         videoId,
@@ -58,7 +57,6 @@ export default function CardVideo({
         uploadDate,
       });
       setIsFavorited(true);
-      console.log(`Vídeo "${title}" foi adicionado aos favoritos.`);
     }
   };
 
@@ -94,7 +92,7 @@ export default function CardVideo({
 
       <button
         onClick={handleFavorite}
-        className="absolute top-2 right-2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition-all duration-200 hover:scale-110"
+        className="absolute top-2 right-2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition-all duration-200 hover:scale-110 cursor-pointer"
         aria-label={
           isFavorited ? "Remover dos favoritos" : "Adicionar aos favoritos"
         }

@@ -20,10 +20,10 @@ export default function VideoDialog({
       aria-labelledby="video-dialog-title"
       aria-modal="true"
     >
-      <div className="relative bg-white rounded-lg overflow-hidden w-full max-w-3xl shadow-lg flex flex-col items-center p-6">
+      <div className="relative bg-white rounded-lg overflow-hidden w-full max-w-3xl shadow-lg flex flex-col items-center p-8 pt-12">
         {/* Botão de Fechamento */}
         <button
-          className="absolute top-4 right-4 text-black bg-gray-200 rounded-full p-2 hover:bg-gray-300 transition cursor-pointer"
+          className="absolute top-4 right-4 text-black bg-gray-200 rounded-full p-2 hover:bg-gray-300 transition cursor-pointer z-10"
           onClick={onClose}
           aria-label="Fechar diálogo de vídeo"
         >
@@ -33,7 +33,8 @@ export default function VideoDialog({
         {/* Título */}
         <h2
           id="video-dialog-title"
-          className="text-xl font-bold text-center mb-4 text-gray-800"
+          className="text-xl font-bold text-center mb-6 text-gray-800 break-words"
+          style={{ wordWrap: "break-word", overflowWrap: "break-word" }}
         >
           {title}
         </h2>

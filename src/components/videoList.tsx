@@ -34,8 +34,8 @@ export default function VideoList({
         title={selectedVideo.title}
         onClose={clearSelectedVideo}
         aria-hidden={!selectedVideo.videoId}
-        aria-labelledby="modal-title"
-        aria-describedby="modal-description"
+        aria-labelledby="Video Dialog"
+        aria-describedby="Modal para exibição do video selecionado"
       />
     </div>
   );
