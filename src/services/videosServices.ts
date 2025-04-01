@@ -1,7 +1,7 @@
 import axios from "axios";
 import { YoutubeResponse } from "@/@types/youtubeResponseSchema";
 
-const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+const apiKey = "AIzaSyCA1pLbPkJy7TCzNdUfQhBIwCTLJNZ6Jew";
 
 export const getYoutubeVideos = async (params: {
   q: string;
