@@ -39,7 +39,16 @@ Certifique-se de ter instalado:
    cd teste-opa-games
    ```
 
-2. 📦 Instale as dependências:
+2. 🔑 Configure as variáveis de ambiente:
+   Crie um arquivo `.env.local` na raiz do projeto e adicione a seguinte variável:
+
+   ```env
+   NEXT_PUBLIC_YOUTUBE_API_KEY=AIzaSyCA1pLbPkJy7TCzNdUfQhBIwCTLJNZ6Jew
+   ```
+
+   ⚠️ **Nota**: Caso a chave de API apresente erro de expiração ou exceda o limite de solicitações, será necessário gerar uma nova chave. Entre em contato para solicitar uma nova chave de API.
+
+3. 📦 Instale as dependências:
 
    ```bash
    npm install
@@ -51,7 +60,7 @@ Certifique-se de ter instalado:
    bun install
    ```
 
-3. ▶️ Inicie o servidor de desenvolvimento:
+4. ▶️ Inicie o servidor de desenvolvimento:
 
    ```bash
    npm run dev
@@ -63,7 +72,7 @@ Certifique-se de ter instalado:
    bun dev
    ```
 
-4. 🌐 Abra [http://localhost:3000](http://localhost:3000) no navegador para acessar a aplicação.
+5. 🌐 Abra [http://localhost:3000](http://localhost:3000) no navegador para acessar a aplicação.
 
 ## 🖥️ Usabilidade
 
