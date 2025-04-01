@@ -43,7 +43,7 @@ Certifique-se de ter instalado:
    Crie um arquivo `.env.local` na raiz do projeto e adicione a seguinte variável:
 
    ```env
-   NEXT_PUBLIC_YOUTUBE_API_KEY=AIzaSyCA1pLbPkJy7TCzNdUfQhBIwCTLJNZ6Jew
+   NEXT_PUBLIC_BASE_API=AIzaSyCA1pLbPkJy7TCzNdUfQhBIwCTLJNZ6Jew
    ```
 
    ⚠️ **Nota**: Caso a chave de API apresente erro de expiração ou exceda o limite de solicitações, será necessário gerar uma nova chave. Entre em contato para solicitar uma nova chave de API.
